@@ -46,7 +46,7 @@ class Bot(Client):
                 if not link:
                     await self.export_chat_invite_link(FORCE_SUB_CHANNEL)
                     link = (await self.get_chat(FORCE_SUB_CHANNEL)).invite_link
-                self.invitelink = link
+                self.invitelink = https://t.me/nowbotupdate
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
@@ -67,7 +67,7 @@ class Bot(Client):
         self.set_parse_mode(ParseMode.HTML)
         self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by \nhttps://t.me/nowbotupdate")
         print(ascii_art)
-        print("""Welcome to CodeXBotz File Sharing Bot""")
+        print("""Welcome to Now File Sharing Bot""")
         self.username = usr_bot_me.username
         #web-response
         app = web.AppRunner(await web_server())
